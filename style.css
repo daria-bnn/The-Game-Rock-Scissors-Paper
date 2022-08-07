@@ -1,0 +1,315 @@
+:root {
+    box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+    color: inherit;
+}
+
+html,
+body {
+    font-family: Montserrat;
+    font-size: 12px;
+    color: #494B57;
+    height: 100%;
+
+    background-color: #C2D8E0;
+}
+
+.container {
+    padding-left: calc(50% - 171.5px);
+    padding-right: calc(50% - 171.5px);
+
+    height: 100%;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    min-height: 100%;
+
+    padding-top: 48px;
+    padding-bottom: 54px;
+}
+
+.app__title {
+    margin-bottom: 26px;
+
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 600;
+
+    text-align: center;
+}
+
+.app__block-img {
+    width: 260px;
+    height: 216px;
+
+    margin-bottom: 26px;
+}
+
+.app__block-img img {
+    width: 100%;
+    height: auto;
+}
+
+.block-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+}
+
+.block-form__label {
+    text-align: center;
+
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.2;
+
+    margin-bottom: 8px;
+}
+
+.block-form__login {
+    width: 268px;
+
+    background: #ffffff;
+    border: 1px solid #6983B3;
+    border-radius: 20px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    padding: 12px 24px 12px 24px;
+    margin-bottom: 32px;
+    outline: none;
+}
+
+.block-form__login::placeholder {
+    font-size: 15px;
+    line-height: 18px;
+    color: #c4c4c4;
+}
+
+.app__button {
+    width: 268px;
+    border-radius: 20px;
+    border: 1px solid #6983B3;
+    background-color: #E8D7CA;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.5px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.app__button_disabled {
+    background-color: #eee7e2;
+}
+
+.block-form__error {
+    position: absolute;
+
+    top: 72px;
+    left: 10px;
+
+    color: #ff4c5b;
+    font-size: 10px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.block-form__error-hidden {
+    display: none;
+}
+
+.app__text {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 53px;
+}
+
+.block-info {
+    flex: 1 0 auto;
+
+    margin-bottom: 24px;
+}
+
+.app__subtitle {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.block-info {
+    width: 344px;
+    display: flex;
+    flex-direction: column;
+}
+
+.block-info__main-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.block-info__header {
+    margin-bottom: 12px;
+}
+
+.block-info__header-name {
+    font-size: 14px;
+}
+
+.block-info__header-wins {
+    width: 30px;
+    height: 30px;
+
+    background-image: url('image/wins.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom center;
+}
+
+.block-info__users {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.block-info__user-name {
+    font-size: 18px;
+}
+
+.block-info__user-wins {
+    font-size: 18px;
+
+    flex: 0 0 30px;
+
+    text-align: center;
+}
+
+.block-wait__title {
+    margin-bottom: 100px;
+}
+
+.block-wait__subtitle {
+    text-align: center;
+    margin-top: 54px;
+    max-width: 230px;
+}
+
+.block-moves {
+    padding-top: 60px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 54px;
+}
+
+.block-moves__button {
+    position: relative;
+}
+
+.block-moves__button_papper::after {
+    content: "";
+
+    position: absolute;
+
+    width: 60px;
+    height: 60px;
+
+    top: -60px;
+    left: 50px;
+
+    background-image: url('image/paper.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+}
+
+.block-moves__button_scis::after {
+    content: "";
+
+    position: absolute;
+
+    width: 60px;
+    height: 50px;
+
+    top: -50px;
+    left: 150px;
+
+    background-image: url('image/scis.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom center;
+}
+
+.block-moves__button_rock::after {
+    content: "";
+
+    position: absolute;
+
+    width: 40px;
+    height: 40px;
+
+    top: -50px;
+    left: 25px;
+
+    background-image: url('image/rock.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom center;
+}
+
+.app__block-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 44px;
+}
+
+.app__text-error {
+    margin-bottom: 46px;
+}
+
+.app__button_reset {
+    margin-top: 26px;
+}

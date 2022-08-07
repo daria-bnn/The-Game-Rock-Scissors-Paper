@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,300italic"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="app">
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+    <script src="js/http-request.js"></script>
+    <script src="./js/list-errors.js"></script>
+    <script src="./js/render-block.js"></script>
+    <script src="./js/render-screen.js"></script>
+    <script src="js/onsuccess-fun.js"></script>
+    <script src="js/processing-html-el.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", window.application.renderScreen('screen-reg'));
+    </script>
+</body>
+
+</html>
