@@ -66,7 +66,6 @@ function renderPlayList(container) {
   fetchRequest(
     `${baseUrl}/player-list?token=${window.application.token}`,
     function (data) {
-      console.log(data);
       container.innerHTML = "";
 
       if (data.list.length === 0) {
@@ -116,7 +115,6 @@ function renderButtonForPlay(container) {
     fetchRequest(
       `${baseUrl}/start?token=${window.application.token}`,
       function (data) {
-        console.log(data);
         if (data.status === "error") {
           window.application.error = data.message;
 
