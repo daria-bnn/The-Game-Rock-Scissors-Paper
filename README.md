@@ -36,11 +36,12 @@ git clone <url-адрес репозитория на GitHub>
 cd <название папки>
 ```
 
-- Запуск проекта:
+- Запустить преокт можно из коммандной строки:
 
 ```Bash
-npm start
+npx http-server
 ```
 
 Разработчик [Дарья](https://github.com/daria-bnn?tab=repositories)
+<br />
 [![telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/dari_bnnn)
